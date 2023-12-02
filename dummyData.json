@@ -1,8 +1,6 @@
+{
 
-
-const jsonData = `{
-
-    [
+    
   "users": [
 
     {
@@ -21,7 +19,7 @@ const jsonData = `{
 
       }
 
-    },
+    }
 
   ],
 
@@ -49,13 +47,24 @@ const jsonData = `{
 
   ]
 
-}`;
+}
 
 const object = JSON.parse(jsonData);
 
-// Access the properties of the JavaScript object
 console.log(object.users); 
 console.log(object.products);  
+
+
+//sample from mdn
+// const json = '{"result":true, "count":42}';
+// const obj = JSON.parse(json);
+
+// console.log(obj.count);
+// // Expected output: 42
+
+// console.log(obj.result);
+// // Expected output: true
+
 
 
 
